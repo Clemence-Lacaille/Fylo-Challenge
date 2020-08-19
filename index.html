@@ -54,7 +54,7 @@
           </p>
           <form>
             <input type="email" id="sub-email" name="email" />
-            <button type="submit" class="btn btn-primary">Get Started</button>
+            <button type="submit">Get Started</button>
           </form>
         </div>
 
@@ -66,8 +66,9 @@
           />
         </div>
       </div>
+
       <div class="row" id="part-2">
-        <div class="col-6">
+        <div class="col-6" id="p2-left">
           <h2>Stay productive, wherever you are</h2>
           <p>
             Never let location be an issue when accessing your files. Fylo has
@@ -75,8 +76,13 @@
             and folders with friends, family and colleagues for live
             collaboration. No email attachments required!
           </p>
-          <a href="#">See how Fylo works</a>
+          <a href="#" class="see-how-works">See how Fylo works</a>
           <div class="testimonial">
+            <img
+              src="./images/icon-quotes.svg"
+              alt="fylo quotes"
+              id="fylo-quotes"
+            />
             <div class="text-testimonial">
               <p>
                 Fylo has improved our team productivity by an order of
@@ -84,19 +90,23 @@
                 well-oiled collaboration machine.
               </p>
             </div>
-            <div class="img-name">
-              <img
-                src="./images/avatar-testimonial.jpg"
-                alt="avatar testimonial"
-                id="avatar-testimonial"
-              />
-              <h4>Kyle Burton</h4>
-              <small>Founder & CEO, Huddle</small>
+            <div class="testimonial-bottom">
+              <div class="img-name">
+                <img
+                  src="./images/avatar-testimonial.jpg"
+                  alt="avatar testimonial"
+                  id="avatar-testimonial"
+                />
+              </div>
+              <div class="name-testimonial">
+                <p id="kyle"><strong>Kyle Burton</strong></p>
+                <small>Founder & CEO, Huddle</small>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-6">
+        <div class="col-6" id="p2-right">
           <img src="./images/illustration-2.svg" alt="illu-2" id="illu-2" />
         </div>
       </div>
@@ -113,16 +123,26 @@
         <div class="col-4" id="submit-free">
           <form>
             <input type="email" id="sub-email" name="email" />
-            <button type="submit" class="btn btn-primary">
+            <button type="submit">
               Get Started For Free
             </button>
           </form>
         </div>
       </div>
       <div class="row" id="bottom-nav">
-        <div class="col-3">
-          <p>Phone: +1-543-123-4567</p>
-          <p>example@fylo.com</p>
+        <div class="col-3" id="phone-mail">
+          <div class="logo-bottom">
+            <img src="./images/logo-white.svg" alt="fylo logo" />
+          </div>
+          <div class="phone-bottom">
+            <img src="./images/icon-phone.svg" alt="fylo phone" />
+
+            <p>Phone: +1-543-123-4567</p>
+          </div>
+          <div class="email-bottom">
+            <img src="./images/icon-email.svg" alt="fylo email" />
+            <p>example@fylo.com</p>
+          </div>
         </div>
 
         <div class="col-3">

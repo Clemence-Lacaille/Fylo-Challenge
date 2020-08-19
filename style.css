@@ -6,13 +6,14 @@
   color: hsl(228, 45%, 44%);
 }*/
 body {
-  width: 100%;
+  max-width: 100%;
 }
 *,
 body,
 .container {
   margin: 0;
   padding: 0;
+  max-width: 100%;
 }
 
 li {
@@ -20,18 +21,19 @@ li {
 }
 
 .top-nav ul {
+  margin-right: 40px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
 
 .top-nav li {
-  margin-right: 30px;
+  margin-right: 40px;
   font-family: "Raleway";
 }
 
 #header {
-  margin-top: 30px;
+  margin-top: 80px;
   margin-left: 40px;
 }
 
@@ -54,20 +56,16 @@ li {
   margin-left: 40px;
 }
 
-h1 {
-  font-size: 30px;
-  font-family: "Raleway", sans-serif;
-}
-
-#part-2 {
-  background: url("./image/bg-curve-desktop.svg");
-}
-
 #bottom-nav {
   background-color: hsl(243, 87%, 12%);
   color: white;
+  font-size: 12px;
+  line-height: 240%;
 }
-
+#p2-right,
+#p2-left {
+  background-color: #f8f8fe;
+}
 #signing {
   background-color: hsl(238, 22%, 44%);
   color: white;
@@ -83,14 +81,97 @@ h1 {
   display: flex;
   flex-direction: column;
   box-shadow: 2px 2px 5px #808080;
+  width: 40%;
+  height: 40%;
+  padding: 20px;
 }
 
 #avatar-testimonial {
   border-radius: 50%;
-  width: 10%;
+  width: 20%;
 }
 
 #submit-free {
   display: flex;
   flex-direction: column;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+h2,
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 150%;
+}
+
+button {
+  padding: 4px 60px;
+  border-radius: 3px;
+  background-color: hsl(224, 93%, 58%);
+  color: white;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  box-shadow: 1px 1px 1px #808080;
+  font-size: 14px;
+}
+
+#phone-mail {
+  display: flex;
+  flex-direction: column;
+}
+.phone-bottom,
+.email-bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.phone-bottom img,
+.email-bottom img {
+  width: 5%;
+  height: 30%;
+  margin-right: 8px;
+  position: relative;
+  top: 9px;
+}
+
+.text-testimonial {
+  margin-top: 12px;
+}
+
+#fylo-quotes {
+  width: 3%;
+}
+
+.testimonial-bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+#kyle {
+  font-size: 14px;
+}
+
+.see-how-works {
+  color: hsl(170, 45%, 43%);
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+#part-2::before {
+  content: "";
+
+  top: -8rem;
+  left: 0;
+  width: 100%;
+  height: 10em;
+  background-image: url(images/bg-curve-desktop.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }

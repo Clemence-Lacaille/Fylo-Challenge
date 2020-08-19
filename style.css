@@ -34,11 +34,11 @@ li {
 
 #header {
   margin-top: 80px;
-  margin-left: 40px;
 }
 
 #header-logo {
   width: 16%;
+  margin-left: 40px;
 }
 
 #intro,
@@ -48,6 +48,7 @@ li {
 #signing,
 #bottom-nav {
   padding: 60px 0px;
+  margin: 0;
 }
 
 #illu-1,
@@ -108,7 +109,7 @@ h1 {
   line-height: 150%;
 }
 
-button {
+#btn-start {
   padding: 4px 60px;
   border-radius: 3px;
   background-color: hsl(224, 93%, 58%);
@@ -174,4 +175,41 @@ button {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
+}
+
+#intro-left,
+#p2-left,
+#signing-left,
+#phone-mail {
+  padding-left: 40px;
+}
+
+#submit-free {
+  display: flex;
+  flex-direction: column;
+  padding-left: 120px;
+}
+
+.input-email {
+  margin-bottom: 14px;
+  width: 100%;
+}
+
+#sub-email {
+  padding: 4px 88px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #808080;
+  border: none;
+}
+
+#btn-sub {
+  padding: 6px 30px;
+  border-radius: 3px;
+  background-color: hsl(224, 93%, 58%);
+  color: white;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  box-shadow: 1px 1px 1px #808080;
+  font-size: 14px;
 }

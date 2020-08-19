@@ -45,7 +45,7 @@
       </div>
 
       <div class="row" id="intro">
-        <div class="col-6">
+        <div class="col-6" id="intro-left">
           <h1>All your files in one secure location, accessible anywhere.</h1>
           <p>
             Fylo stores your most important files in one secure location. Access
@@ -54,7 +54,7 @@
           </p>
           <form>
             <input type="email" id="sub-email" name="email" />
-            <button type="submit">Get Started</button>
+            <button type="submit" id="btn-start">Get Started</button>
           </form>
         </div>
 
@@ -111,7 +111,7 @@
         </div>
       </div>
       <div class="row" id="signing">
-        <div class="col-8">
+        <div class="col-6" id="signing-left">
           <h2>Get early access today</h2>
           <p>
             It only takes a minute to sign up and our free starter tier is
@@ -120,12 +120,16 @@
           </p>
         </div>
 
-        <div class="col-4" id="submit-free">
+        <div class="col-6" id="submit-free">
           <form>
-            <input type="email" id="sub-email" name="email" />
-            <button type="submit">
-              Get Started For Free
-            </button>
+            <div class="input-email">
+              <input type="email" id="sub-email" name="email" />
+            </div>
+            <div class="sub-btn">
+              <button type="submit" id="btn-sub">
+                Get Started For Free
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -168,7 +172,8 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by
+        <a href="https://github.com/Clemence-Lacaille">Clémence Lacaille</a>.
       </p>
     </footer>
   </body>

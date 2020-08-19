@@ -1,7 +1,96 @@
-.attribution {
+/*.attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}*/
+body {
+  width: 100%;
+}
+*,
+body,
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.top-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.top-nav li {
+  margin-right: 30px;
+  font-family: "Raleway";
+}
+
+#header {
+  margin-top: 30px;
+  margin-left: 40px;
+}
+
+#header-logo {
+  width: 16%;
+}
+
+#intro,
+#part-2 {
+  margin-top: 120px;
+}
+#signing,
+#bottom-nav {
+  padding: 60px 0px;
+}
+
+#illu-1,
+#illu-2 {
+  width: 90%;
+  margin-left: 40px;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+#part-2 {
+  background: url("./image/bg-curve-desktop.svg");
+}
+
+#bottom-nav {
+  background-color: hsl(243, 87%, 12%);
+  color: white;
+}
+
+#signing {
+  background-color: hsl(238, 22%, 44%);
+  color: white;
+}
+
+.testimonial {
+  background-color: white;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 5px #808080;
+}
+
+#avatar-testimonial {
+  border-radius: 50%;
+  width: 10%;
+}
+
+#submit-free {
+  display: flex;
+  flex-direction: column;
 }

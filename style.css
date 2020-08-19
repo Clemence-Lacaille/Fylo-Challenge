@@ -223,3 +223,24 @@ h1 {
   box-shadow: 1px 1px 1px #808080;
   font-size: 14px;
 }
+
+.attribution {
+  font-size: 8px;
+  text-align: center;
+}
+
+.logo-bottom {
+  margin-bottom: 12px;
+}
+#sm-bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+#tw,
+#fb,
+#insta {
+  width: 8%;
+  height: 16%;
+  margin-right: 10px;
+}

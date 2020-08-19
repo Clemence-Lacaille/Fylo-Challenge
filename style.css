@@ -45,6 +45,7 @@ li {
 #part-2 {
   margin-top: 120px;
 }
+
 #signing,
 #bottom-nav {
   padding: 60px 0px;
@@ -66,6 +67,7 @@ li {
 #p2-right,
 #p2-left {
   background-color: #f8f8fe;
+  padding-bottom: 40px;
 }
 #signing {
   background-color: hsl(238, 22%, 44%);
@@ -99,6 +101,14 @@ li {
 
 p {
   font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  text-align: justify;
+}
+
+#intro p,
+#part-2 p {
+  color: #696969;
 }
 
 h2,

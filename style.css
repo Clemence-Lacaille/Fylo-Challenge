@@ -15,7 +15,9 @@ body,
   padding: 0;
   max-width: 100%;
 }
-
+html {
+  box-sizing: border-box;
+}
 li {
   list-style: none;
 }
@@ -60,27 +62,6 @@ li {
 #signing {
   background-color: hsl(238, 22%, 44%);
   color: white;
-}
-
-.testimonial {
-  background-color: white;
-  border-radius: 5px;
-  padding: 16px;
-  margin: 16px 0;
-  font-size: 12px;
-  font-family: "Open Sans", sans-serif;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 2px 2px 5px #808080;
-  width: 40%;
-  height: 40%;
-  padding: 20px;
-}
-
-#avatar-testimonial {
-  border-radius: 50%;
-  width: 40%;
-  margin: 10px 0 0 20px;
 }
 
 #submit-free {
@@ -130,14 +111,6 @@ h1 {
   margin-right: 8px;
   position: relative;
   top: 9px;
-}
-
-.text-testimonial {
-  margin-top: 12px;
-}
-
-#fylo-quotes {
-  width: 3%;
 }
 
 .testimonial-bottom {
@@ -290,6 +263,37 @@ h1 {
   p {
     text-align: center;
   }
+
+  .testimonial {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 50px;
+    justify-content: left;
+    font-size: 10px;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 1px #808080;
+  }
+
+  #fylo-quotes {
+    width: 5%;
+  }
+
+  .text-testimonial {
+    justify-content: left;
+  }
+
+  #avatar-testimonial {
+    border-radius: 50%;
+    width: 50%;
+    margin-top: 10px;
+    margin-right: -70px;
+  }
+
+  #function {
+    margin-top: -30px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -331,5 +335,32 @@ h1 {
     font-size: 14px;
     font-weight: 100;
     text-align: justify;
+  }
+  .testimonial {
+    background-color: white;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px #808080;
+    width: 40%;
+    height: 40%;
+    padding: 20px;
+  }
+  #fylo-quotes {
+    width: 3%;
+  }
+
+  .text-testimonial {
+    margin-top: 12px;
+  }
+
+  #avatar-testimonial {
+    border-radius: 50%;
+    width: 40%;
+    margin: 10px 0 0 20px;
   }
 }

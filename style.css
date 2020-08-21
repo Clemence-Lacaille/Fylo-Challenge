@@ -5,9 +5,7 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }*/
-body {
-  max-width: 100%;
-}
+
 *,
 body,
 .container {
@@ -98,28 +96,10 @@ h1 {
   display: flex;
   flex-direction: column;
 }
-.phone-bottom,
-.email-bottom {
-  display: flex;
-  flex-direction: row;
-}
-
-.phone-bottom img,
-.email-bottom img {
-  width: 5%;
-  height: 30%;
-  margin-right: 8px;
-  position: relative;
-  top: 9px;
-}
 
 .testimonial-bottom {
   display: flex;
   flex-direction: row;
-}
-
-#kyle {
-  font-size: 14px;
 }
 
 .see-how-works {
@@ -140,19 +120,6 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
-}
-
-#intro-left,
-#p2-left,
-#signing-left,
-#phone-mail {
-  padding: 20px 60px;
-}
-
-#submit-free {
-  display: flex;
-  flex-direction: column;
-  padding-left: 120px;
 }
 
 .input-email {
@@ -202,11 +169,20 @@ h1 {
 @media screen and (max-width: 375px) {
   #intro,
   #part-2,
-  #testimonial,
-  #bottom-nav,
-  #signing {
+  #testimonial {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  #bottom-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+  }
+  #signing {
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
   }
@@ -219,7 +195,7 @@ h1 {
   #fb,
   #insta {
     width: 3vw;
-    height: 4vh;
+    height: 5vh;
   }
   #btn-start {
     width: 100%;
@@ -233,9 +209,6 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-  }
-  .logo-bottom {
-    width: 1000vw;
   }
 
   h1 {
@@ -281,7 +254,7 @@ h1 {
   }
 
   .text-testimonial {
-    justify-content: left;
+    text-align: justify;
   }
 
   #avatar-testimonial {
@@ -292,7 +265,37 @@ h1 {
   }
 
   #function {
-    margin-top: -30px;
+    position: relative;
+    top: -10px;
+  }
+
+  #kyle {
+    font-size: 12px;
+    position: relative;
+    top: 4px;
+    left: -4px;
+  }
+
+  .sub-btn {
+    width: 100%;
+  }
+
+  #logo-white {
+    width: 3000%;
+  }
+
+  .phone-bottom img,
+  .email-bottom img {
+    width: 50%;
+    height: 30%;
+    margin-right: 8px;
+    position: relative;
+    top: 9px;
+  }
+  .phone-bottom,
+  .email-bottom {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -362,5 +365,42 @@ h1 {
     border-radius: 50%;
     width: 40%;
     margin: 10px 0 0 20px;
+  }
+
+  #kyle {
+    font-size: 14px;
+    position: relative;
+    top: 15px;
+    left: -34px;
+  }
+
+  #intro-left,
+  #p2-left,
+  #signing-left,
+  #phone-mail {
+    padding: 20px 60px;
+  }
+
+  #submit-free {
+    padding-left: 120px;
+  }
+
+  .logo-bottom {
+    width: 1000vw;
+  }
+
+  .phone-bottom img,
+  .email-bottom img {
+    width: 5%;
+    height: 30%;
+    margin-right: 8px;
+    position: relative;
+    top: 9px;
+  }
+
+  .phone-bottom,
+  .email-bottom {
+    display: flex;
+    flex-direction: row;
   }
 }

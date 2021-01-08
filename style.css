@@ -13,6 +13,7 @@ body,
   padding: 0;
   max-width: 100%;
 }
+
 html {
   box-sizing: border-box;
 }
@@ -431,6 +432,10 @@ h1 {
   body {
     margin: 16px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .top-nav {
@@ -475,5 +480,54 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+
+  .testimonial {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    overflow: hidden;
+    max-width: 100%;
+    width: 300px;
+    margin-top: 20px;
+    padding: 2px;
+    position: relative;
+    left: 20%;
+    font-size: 12px;
+  }
+  #avatar-testimonial {
+    border-radius: 50%;
+    width: 50%;
+  }
+
+  .name-testimonial,
+  .text-testimonial {
+    text-align: left;
+  }
+  #kyle,
+  #function {
+    padding: -25px;
+  }
+
+  #sub-email,
+  #btn-start,
+  #sub-email-2,
+  #btn-sub {
+    margin-bottom: 15px;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #see-how-works {
+    padding: 30px;
+  }
+
+  #submit-free {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 50%;
   }
 }
